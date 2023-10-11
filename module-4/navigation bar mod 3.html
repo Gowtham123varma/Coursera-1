@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+    <style>
+        body{
+            background-color: rgb(99, 16, 16);
+            margin: 0%;
+        }
+    #header-nav
+        {
+            background-color: #fdc808;
+            border: 0;
+            border-radius: 0;
+            width: 1536<px;
+            height: 140px;
+            padding: 0px;  
+        }
+        
+        #image_logo {
+             width: 104px;
+             height: 105px;
+             float: left;
+        }
+        
+        h1{
+            font-size: 40px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: green;
+            margin: 0%;
+            width:700px;
+           
+            
+          
+        }
+        
+        #img-div{
+            
+            float: left;
+            padding-top: 50px;
+            height: 60px;
+            width: 50pxx;
+        }
+        h2{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: medium;
+            color: red;
+        }
+
+
+         @media (max-width:992px) {
+            #image_logo {
+                display:none;
+            }   
+        }    
+           
+        .combine{
+            padding-left:0px;
+            
+            width: 800px;
+            float: left;   
+        }
+        #nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+#phone {
+  margin-top: 5px;
+}
+#phone a { /* Phone number */
+  text-align: right;
+  padding-bottom: 0;
+}
+#phone div { /* We Deliver */
+  color: #557c3e;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+        
+        
+
+    </style>
+</head>
+
+<body>
+    <nav id="header-nav" class="navbar-default">
+        <div class="container">
+            
+                <div id="image_logo"><img src="C:\Users\marra\OneDrive\Desktop\Documents\Web development\Coursera\restaurant logo.png" alt="Logo image" width="100px
+                    " height="100px">       
+                </div>
+                <div class="combine">
+                  <div id="img-div"><img src="C:\Users\marra\OneDrive\Desktop\Documents\Web development\Coursera\star.png" alt="Star" width="60px" height="55px"></div>
+                  <div id="head-nav"><h1>David chu's Chinese Bistro</h1></div>
+                  <h2>Kosher Verified</h2>
+                </div>
+        </div>
+        
+    </nav>
+
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data target="#collapsable-nav" aria-expanded="false"></button>
+    <div id="collapsable-nav" class="collapsable navbar-collapse">
+        <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+                <a href="menu-categories.html">
+                    <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs">Awards</a>
+                    </li>
+                    <li id="phone" class="hidden-xs">
+                        <a href="tel:410-602-5008">
+                          <span>410-602-5008</span></a><div>* We Deliver</div>
+                      </li>
+
+
+
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="container"></div>
+</body>
+</html>
